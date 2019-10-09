@@ -1,0 +1,88 @@
+body {
+    font-size: 18px;
+}
+ol li {
+    background: rgb(250, 153, 117);
+    display: inline;
+    padding: 0em;
+    margin: 0em;
+    border: 0.2em solid red;
+    list-style-type: circle;
+}
+
+h1 {
+    color:red;
+
+    font-size: 3.5em;
+}
+
+h2 {
+    color: rgb(165, 1, 1);
+
+}
+
+h3 {
+    color: rgb(165, 1, 1);
+
+}
+
+.important {
+    color: rgb(165, 1, 1);
+}
+
+img {
+    width: 33%;
+}
+
+#thelink {
+    font-family: fantasy;
+}
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+}
+
+.navbutton {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(196, 233, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbutton :hover, .navbutton :active {
+    background-color: red;
+}
+
+.basic-info, .languages, .cities, .nature {
+    width: 33%;
+    height: auto;
+    background-color: rgb(196, 233, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.container
+{
+    display: flex;
+}
+
+.maakuva {
+    width: 50%;
+}
+
+.lippukuva {
+    width: 15%;
+}

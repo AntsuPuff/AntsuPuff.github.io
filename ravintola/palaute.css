@@ -1,0 +1,49 @@
+header {grid-area: header;}
+nav {grid-area: menu;}
+article {grid-area: main;}
+section {grid-area: section;}
+aside {grid-area: info;}
+footer {grid-area: footer;}
+
+@media screen and (min-width: 480px) {
+    body{
+        display: grid;
+        grid-template-areas:
+        'header header header header header header'
+        'info section section section section section'
+        'info main main main main main'
+        'footer footer footer footer footer footer';
+        grid-gap: 10px;
+        background-color: rgb(240, 227, 227);
+        padding: 10px;
+        font-family: 'Poppins', sans-serif;
+        background-image: url(imagesPal/tausta.jpg);
+    }
+}
+
+header {
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.navbutton {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(196, 233, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form {
+    margin-left: auto;
+}

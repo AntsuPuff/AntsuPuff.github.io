@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Palaute</title>
+    <link rel="stylesheet" href="ravintola.css">
+    <style>@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');</style>
+    </head>
+    <body>
+            <header>
+                    <nav>
+                            <ul class="navbar">
+                                        <li ><a class="navbutton" href="../Ravintola/ravintola.html">Takaisin etusivulle</a></li>
+                            </ul>
+                        </nav>
+                </header>
+                <section>
+                <form action="somePHPpage.php" method="post">
+                        <p><strong>Palautteenne</strong></p>
+                        <p>Etunimi: </p><input type="text" name="firstname" value="esim. Matti Malli" maxlength=30></p>
+                        <p>Ikä: <input type="number" name="age"></p>
+                        <p>Sukupuoli:</p>
+                        <p><input type="radio" name="gender" value="man">Mies<br></p>
+                        <p><input type="radio" name="gender" value="female">Nainen<br></p>
+                        <p><input type="radio" name="gender" value="other" checked>Muu<br></p>
+                        <p>Mitä piditte ruuastamme:</p>
+                        <input type="checkbox" name="transport1" value="bike"> Se oli todella hyvää<br>
+                        <input type="checkbox" name="transport2" value="car"> Se oli kelvollista<br>
+                        <input type="checkbox" name="transport3" value="buss"> Siinä olisi parannettavaa<br>
+                        <input type="checkbox" name="transport4" value="onfoot" checked> En suositteleisi kenellekään<br>
+                        <p>Minkä käyttäjäjärjestelmän kautta vastaat?: </p>
+                        <p><select name="mobile">
+                                        <option value="android">Android</option>
+                                        <option value="iphone">iPhone</option>
+                                        <option value="ipad">iPad</option>
+                                        <option value="other">Muu</option>
+                        </select></p>
+                        <p>Muuta palautetta?:</p>
+                        <textarea name="message" rows="5" cols="30">
+                                Kirjoitathan palautteesi tähän kenttään
+                        </textarea>
+                        <p><input type="submit" value="Lähetä"></p>
+                </form>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+header {grid-area: header;}
+nav {grid-area: menu;}
+article {grid-area: main;}
+section {grid-area: section;}
+aside {grid-area: info;}
+footer {grid-area: footer; margin-right: auto;}
+
+@media screen and (min-width: 480px) {
+    body{
+        display: grid;
+        grid-template-areas:
+        'header header header header header header'
+        'info section section section section section'
+        'info main main main main main'
+        'footer footer footer footer footer footer';
+        grid-gap: 10px;
+        padding: 10px;
+        background-image:url(imagesRav/taustakuva.jpg);
+        background-color: #cccccc;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+header {
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.navbutton {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(196, 233, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 25px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    background-color: rgba(240, 255, 255, 0.637);
+    padding: 0.5em;
+}S
+footer {
+    background-color: rgba(240, 255, 255, 0.637);
+    padding: 0.5em;
+}
+aside {
+    background-color: rgba(240, 255, 255, 0.637);
+    padding: 0.5em;
+}
+article {
+    background-color: rgba(240, 255, 255, 0.637);
+    padding: 0.5em;
+}
+aside {
+    background-color: rgba(240, 255, 255, 0.637);
+    padding: 0.5em;
+}
+title {
+    background-color: rgba(240, 255, 255, 0.637);
+    padding: 0.5em;
+}
